@@ -50,7 +50,7 @@
         <!--Dream House-->
         <a-entity>
             <a-entity gltf-model="#DreamHouse"
-                      position="0 -4.8 0">
+                      position="0 -4.7 0">
             </a-entity>
         </a-entity>
         <!-- tree model -->
@@ -83,8 +83,17 @@
         <!-- Light entity -->
         <a-entity>
             <a-light type="ambient" 
+                     color="#BBB"
                      intensity="0.2"
-                     position="2 -3.125 -22.54" >
+                     Pposition="2 -3.125 -22.54" >
+
+            </a-light>
+        </a-entity>
+        <a-entity>
+            <a-light type="directional" 
+                     intensity="0.2"
+                     color="FFF"
+                     position="-0.5 1 1" >
 
             </a-light>
         </a-entity>
@@ -92,7 +101,7 @@
       </a-light>
       <!-- first light -->
       <a-light type="point" 
-               position="2.3 -2.0 0.134"  
+               position="10.3 -2.0 0.134"  
                intensity="0.9" 
         
                color="#ccbc38" 
