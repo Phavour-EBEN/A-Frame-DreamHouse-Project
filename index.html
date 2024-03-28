@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/aframe.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="grass" src="Assets/Imgs/grass copy.jpg" alt="">
+            <img id="sky" src="Assets/Imgs/clear-sunny-sky.jpg" alt="">
+            <img id="wall" src="/Assets/Imgs/wall copy.jpg" alt="">
+            <img id="floor" src="Assets/Imgs/TexturesCom_BrickRound0046_1_seamless_S copy.jpg" alt="">
+            <a-assets-item id="DreamHouse" src="Assets/scene.gltf" ></a-assets-item>
+            <a-assets-item id="tree" src="Assets/tree_animate copy/scene.gltf"></a-assets-item>
+            <a-assets-item id="main_gate" src="Assets/the_mansion_gate copy/scene.gltf"></a-assets-item>
+
+        </a-assets>
+        <a-sky src="#sky">
+
+        </a-sky>
+        <a-plane src="#floor"
+                material="color:#ffffff;             
+                          normal-map:#floor-3;
+                          normal-texture-repeat:3 3;
+                          repeat: 10 10;
+                          scale:1 1"
+                rotation="-90 0 0"
+                scale="1 1"
+                position="4.525 -4.7 -4"
+                width="35"
+                height="35">
+
+        </a-plane>
+        <a-plane src="#grass"
+                material="color:#ffffff;             
+                          normal-map:#floor-3;
+                          normal-texture-repeat:500 500;
+                          repeat: 100 100;
+                          scale:5000 5000"
+                rotation="-90 0 0"
+                scale="5 5 0"
+                position="0 -5 0"
+                width="500"
+                height="500">
+
+        </a-plane>
+        <!--Dream House-->
+        <a-entity>
+            <a-entity gltf-model="#DreamHouse"
+                      position="0 -4.8 0">
+            </a-entity>
+        </a-entity>
+        <!-- tree model -->
+        <a-entity gltf-model="#tree"
+                  position="24 -5 -13"
+                  rotation="0 90 0"
+                  scale="0.2 0.3 0.2">
+
+        </a-entity>
+        <a-entity gltf-model="#tree"
+                  position="-20 -5 -13"
+                  rotation="0 90 0"
+                  scale="0.2 0.3 0.2">
+
+        </a-entity>
+        <!-- gate model -->
+        <a-entity gltf-model="#main_gate"
+                  position="3.4 -5 25"
+                  scale="1.5 1.5 1.5">
+
+        </a-entity>
+
+        
+        <!--Camera entity-->
+        <a-entity position="5.007 -4.5 49">
+            <a-camera user-height="1.6">
+
+            </a-camera>
+        </a-entity>
+        <!-- Light entity -->
+        <a-entity>
+            <a-light type="ambient" 
+                     intensity="0.2"
+                     position="2 -3.125 -22.54" >
+
+            </a-light>
+        </a-entity>
+
+      </a-light>
+      <!-- first light -->
+      <a-light type="point" 
+               position="2.3 -2.0 0.134"  
+               intensity="0.9" 
+        
+               color="#ccbc38" 
+               light="intensity: 0.9; distance: 50.21; groundcolor: #4f3 castshadow: true">
+    </a-light>
+        <a-light type="spot"
+        intensity="0.1"
+        color="#fff"
+        position="20 10 -20">
+
+        </a-light>
+      <!-- wall -->
+      <a-box material="src:#wall;
+                       color:#ffffff;
+                       normal-texture-repeat:3 3;
+                       repeat: 2 2;"
+             color="#ffffff"
+             height="10" width="57" depth="1"
+             position="3 -3 -40.772">
+
+      </a-box>
+      <a-box material="src:#wall;
+                       color:#ffffff;
+                       normal-texture-repeat:3 3;
+                       repeat: 2 2;"
+             color="#ffffff"
+             height="10" width="65" depth="1"
+             position="31.7 -3 -7.972"
+             rotation="0 90 0">
+
+
+      </a-box>
+      <a-box material="src:#wall;
+                       color:#ffffff;
+                       normal-texture-repeat:3 3;
+                       repeat: 2 2;"
+                         
+             color="#ffffff"
+             height="10" width="65" depth="1"
+             position="-25 -3 -7.972"
+             rotation="0 90 0">
+
+
+      </a-box>
+
+        
+    </a-scene>
+    
+</body>
+</html>

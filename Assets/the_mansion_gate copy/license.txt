@@ -1,0 +1,11 @@
+Model Information:
+* title:	The Mansion Gate
+* source:	https://sketchfab.com/3d-models/the-mansion-gate-392fc123a68844779636004af5209e74
+* author:	finaltouch_1a (https://sketchfab.com/finaltouch_1a)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "The Mansion Gate" (https://sketchfab.com/3d-models/the-mansion-gate-392fc123a68844779636004af5209e74) by finaltouch_1a (https://sketchfab.com/finaltouch_1a) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
