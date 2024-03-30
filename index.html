@@ -19,7 +19,8 @@
             <a-assets-item id="DreamHouse" src="Assets/scene.gltf"></a-assets-item>
             <a-assets-item id="tree" src="Assets/tree_animate copy/scene.gltf"></a-assets-item>
             <a-assets-item id="main_gate" src="Assets/the_mansion_gate copy/scene.gltf"></a-assets-item>
-            <a-assts-item id="pool" src="Assets/pool/scene.gltf"></a-assts-item>
+            <a-assets-item id="gate_light" src="Assets/street_light/scene.gltf"></a-assets-item>
+            <a-assts-item id="pool" src="Assets/swimming_pool (1)/scene.gltf"></a-assts-item>
 
         </a-assets>
         <a-sky src="#sky">
@@ -89,24 +90,36 @@
                   scale="1.5 1.5 1.5">
 
         </a-entity>
+        <a-entity gltf-model="#gate_light"
+                  scale="0.02 0.02 0.02"
+                  position="-2 -5 36">
+
+        </a-entity>
+        <a-entity gltf-model="#gate_light"
+                  scale="0.02 0.02 0.02"
+                  position="9 -5 36">
+
+        </a-entity>
         <!-- pool model -->
         <a-entity gltf-model="#pool"
-                  scale="0.009 0.009 0.009"
-                  position="16 -6.45 -24.8">
+                  scale="0.025 0.02 0.02"
+                  position="7.3 -4.8 -27.8"
+                  rotation="0 270 0"
+                  >
 
         </a-entity>
         <a-water
                opacity="0.6"
                side="double"
-               width="10"
-               height="10"
+               width="6"
+               height="8"
                base-color="lightblue"
                foam-color="blue"
                repeat="2"
-               scale="0.02 0.02 0.02"
                voronoi-points="10"
-               rotation="90 0 0"
-               position="16 2 -24.8"
+               rotation="-90 0 90"
+               position="12 -4.7 -24.9"
+               scale="0.7 0.7 0.7"
 
       >
       </a-water>

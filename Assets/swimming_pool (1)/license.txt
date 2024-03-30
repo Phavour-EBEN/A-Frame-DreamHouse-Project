@@ -1,0 +1,11 @@
+Model Information:
+* title:	Swimming Pool
+* source:	https://sketchfab.com/3d-models/swimming-pool-a88ee15a32834989bd2a5b8c633cd598
+* author:	Darksider Crood (https://sketchfab.com/DarksiderCrood)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Swimming Pool" (https://sketchfab.com/3d-models/swimming-pool-a88ee15a32834989bd2a5b8c633cd598) by Darksider Crood (https://sketchfab.com/DarksiderCrood) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
