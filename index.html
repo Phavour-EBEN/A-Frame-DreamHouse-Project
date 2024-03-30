@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Dream House</title>
     <script src="scripts/aframe.js"></script>
+    <script src="scripts/ada-water.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,7 @@
             <a-assets-item id="DreamHouse" src="Assets/scene.gltf"></a-assets-item>
             <a-assets-item id="tree" src="Assets/tree_animate copy/scene.gltf"></a-assets-item>
             <a-assets-item id="main_gate" src="Assets/the_mansion_gate copy/scene.gltf"></a-assets-item>
+            <a-assts-item id="pool" src="Assets/pool/scene.gltf"></a-assts-item>
 
         </a-assets>
         <a-sky src="#sky">
@@ -31,9 +33,22 @@
                           scale:1 1" 
                  rotation="-90 0 0" 
                  scale="1 1" 
-                 position="4.525 -4.7 -4" 
+                 position="4.525 -4.9 -4" 
                  width="35" 
                  height="35">
+
+        </a-plane>
+        <a-plane src="#floor" 
+                 material="color:#ffffff;             
+                          normal-map:#floor-3;
+                          normal-texture-repeat:3 3;
+                          repeat: 10 10;
+                          scale:1 1" 
+                 rotation="-90 0 0" 
+                 scale="1 1" 
+                 position="3.525 -4.9 24.5" 
+                 width="10" 
+                 height="22">
 
         </a-plane>
         <a-plane src="#grass" 
@@ -70,10 +85,31 @@
         </a-entity>
         <!-- gate model -->
         <a-entity gltf-model="#main_gate" 
-                  position="3.4 -5 25" 
+                  position="3.4 -5 35" 
                   scale="1.5 1.5 1.5">
 
         </a-entity>
+        <!-- pool model -->
+        <a-entity gltf-model="#pool"
+                  scale="0.009 0.009 0.009"
+                  position="16 -6.45 -24.8">
+
+        </a-entity>
+        <a-water
+               opacity="0.6"
+               side="double"
+               width="10"
+               height="10"
+               base-color="lightblue"
+               foam-color="blue"
+               repeat="2"
+               scale="0.02 0.02 0.02"
+               voronoi-points="10"
+               rotation="90 0 0"
+               position="16 2 -24.8"
+
+      >
+      </a-water>
 
 
         <!--Camera entity-->
@@ -120,7 +156,7 @@
                        repeat: 2 2;" 
                color="#ffffff" 
                height="10" 
-               width="65" 
+               width="86" 
                depth="1" 
                position="31.7 -3 -7.972"
                rotation="0 90 0">
@@ -133,7 +169,7 @@
                        repeat: 2 2;" 
                color="#ffffff" 
                height="10" 
-               width="65" 
+               width="86" 
                depth="1" 
                position="-25 -3 -7.972"
                rotation="0 90 0">
