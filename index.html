@@ -144,13 +144,21 @@
         </a-entity>
 
         <!-- first light -->
-        <a-entity>
-            <a-light type="directional" intensity="0.2" color="#FFF" position="-0.5 1 1">
-
-            </a-light>
-        </a-entity>
+        <a-box color="black" 
+               height="0.5" 
+               width="0.5" 
+               depth="4" 
+               position="52.44749 5.9999 -38.54042">
+            </a-box>
+         <a-light type="spot" 
+                  intensity="1" 
+                  angle="35" 
+                  penumbra="0.2" 
+                  distance="20" 
+                  position="54.347 6.54973 -38.54" 
+                  rotation="-90 0 0" 
+                  light="angle: 80; penumbra: 0.31; distance: 18.87; color: #ff7b00; decay: -11.09; castShadow: true"></a-light>
         
-          
         <!-- wall -->
         <a-box material="src:#wall;
                        color:#ffffff;
