@@ -148,16 +148,35 @@
                height="0.5" 
                width="0.5" 
                depth="4" 
-               position="52.44749 5.9999 -38.54042">
+               position="25 1.2 -12.3">
             </a-box>
          <a-light type="spot" 
                   intensity="1" 
                   angle="35" 
                   penumbra="0.2" 
                   distance="20" 
-                  position="54.347 6.54973 -38.54" 
+                  position="25 1.2 -12.8" 
                   rotation="-90 0 0" 
-                  light="angle: 80; penumbra: 0.31; distance: 18.87; color: #ff7b00; decay: -11.09; castShadow: true"></a-light>
+                  light="angle: 50; penumbra: 0.31; distance: 50; color: #ff7b00; decay: -11.09; castShadow: true">
+         </a-light>
+        
+        <!-- second light -->
+        <a-sphere
+        radius="0.1"
+        color="white"
+        position="8.9 0.6 36.38"
+        emissive="#white"
+        material="roughness:0.2; metalness:0.7">     
+        </a-sphere>
+         <a-light type="spot" 
+                  intensity="1" 
+                  angle="35" 
+                  penumbra="0.2" 
+                  distance="20" 
+                  position="8.2 7.4 36.38" 
+                  rotation="-90 0 0" 
+                  light="angle: 30; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+         </a-light>
         
         <!-- wall -->
         <a-box material="src:#wall;
