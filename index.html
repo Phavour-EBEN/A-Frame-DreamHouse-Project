@@ -90,14 +90,15 @@
                   scale="1.5 1.5 1.5">
 
         </a-entity>
+        <!-- gate light -->
         <a-entity gltf-model="#gate_light"
-                  scale="0.02 0.02 0.02"
-                  position="-2 -5 36">
+                  scale="0.009 0.009 0.009"
+                  position="-2 5.2 36">
 
         </a-entity>
         <a-entity gltf-model="#gate_light"
-                  scale="0.02 0.02 0.02"
-                  position="9 -5 36">
+                  scale="0.009 0.009 0.009"
+                  position="9 5.2 36">
 
         </a-entity>
         <!-- pool model -->
@@ -143,7 +144,7 @@
             </a-light>
         </a-entity>
 
-        <!-- first light -->
+        <!-- first light 1 -->
         <a-box color="black" 
                height="0.5" 
                width="0.5" 
@@ -159,12 +160,29 @@
                   rotation="-90 0 0" 
                   light="angle: 50; penumbra: 0.31; distance: 50; color: #ff7b00; decay: -11.09; castShadow: true">
          </a-light>
+          <!-- first light 2 -->
+        <a-box color="black" 
+        height="0.5" 
+        width="0.5" 
+        depth="4" 
+        position="25 1.2 -0.3">
+     </a-box>
+     <a-light type="spot" 
+           intensity="1" 
+           angle="35" 
+           penumbra="0.2" 
+           distance="20" 
+           position="25 1.2 -0.8" 
+           rotation="-90 0 0" 
+           light="angle: 50; penumbra: 0.31; distance: 50; color: #ff7b00; decay: -11.09; castShadow: true">
+     </a-light>
+    
         
         <!-- second light -->
         <a-sphere
         radius="0.1"
         color="white"
-        position="8.9 0.6 36.38"
+        position="8.9 7.5 36.38"
         emissive="#white"
         material="roughness:0.2; metalness:0.7">     
         </a-sphere>
@@ -173,9 +191,9 @@
                   angle="35" 
                   penumbra="0.2" 
                   distance="20" 
-                  position="8.2 7.4 36.38" 
+                  position="8.2 7.4 36.642" 
                   rotation="-90 0 0" 
-                  light="angle: 30; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+                  light="angle: 35; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
          </a-light>
         
         <!-- wall -->
