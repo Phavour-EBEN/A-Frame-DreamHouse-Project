@@ -21,6 +21,7 @@
             <a-assets-item id="main_gate" src="Assets/the_mansion_gate copy/scene.gltf"></a-assets-item>
             <a-assets-item id="gate_light" src="Assets/street_light/scene.gltf"></a-assets-item>
             <a-assts-item id="pool" src="Assets/swimming_pool (1)/scene.gltf"></a-assts-item>
+            <a-assts-item id="car" src="Assets/car/scene.gltf"></a-assts-item>
 
         </a-assets>
         <a-sky src="#sky">
@@ -90,15 +91,27 @@
                   scale="1.5 1.5 1.5">
 
         </a-entity>
+        <!-- car model 1 -->
+        <a-entity gltf-model="#car"
+                  position="-5 -4.6 12"
+                  rotation="0 90 0">
+
+        </a-entity>
+        <!-- car model 2 -->
+        <a-entity gltf-model="#car"
+                  position="15 -4.6 12"
+                  rotation="0 270 0">
+
+        </a-entity>
         <!-- gate light -->
         <a-entity gltf-model="#gate_light"
-                  scale="0.009 0.009 0.009"
-                  position="-2 5.2 36">
+                  scale="0.04 0.04 0.04"
+                  position="-12.5 -5 36.1">
 
         </a-entity>
         <a-entity gltf-model="#gate_light"
-                  scale="0.009 0.009 0.009"
-                  position="9 5.2 36">
+                  scale="0.04 0.04 0.04"
+                  position="18.5 -5 36">
 
         </a-entity>
         <!-- pool model -->
@@ -178,11 +191,11 @@
      </a-light>
     
         
-        <!-- second light -->
+        <!-- second light 1-->
         <a-sphere
-        radius="0.1"
+        radius="0.2"
         color="white"
-        position="8.9 7.5 36.38"
+        position="18.9 7.5 36.38"
         emissive="#white"
         material="roughness:0.2; metalness:0.7">     
         </a-sphere>
@@ -191,9 +204,26 @@
                   angle="35" 
                   penumbra="0.2" 
                   distance="20" 
-                  position="8.2 7.4 36.642" 
+                  position="18.9 7.4 36.642" 
                   rotation="-90 0 0" 
-                  light="angle: 35; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+                  light="angle: 50; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+         </a-light>
+         <!-- second light 2 -->
+        <a-sphere
+        radius="0.2"
+        color="white"
+        position="-11.7 5.5 36.38"
+        emissive="#white"
+        material="roughness:0.2; metalness:0.7">     
+        </a-sphere>
+         <a-light type="spot" 
+                  intensity="1" 
+                  angle="35" 
+                  penumbra="0.2" 
+                  distance="20" 
+                  position="-11 7.4 36.642" 
+                  rotation="-90 0 0" 
+                  light="angle: 50; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
          </a-light>
         
         <!-- wall -->
