@@ -140,7 +140,7 @@
 
 
         <!--Camera entity-->
-        <a-entity position="5.007 -4.5 49">
+        <a-entity position="5.007 -4 49">
             <a-camera user-height="1.6">
 
             </a-camera>
@@ -189,41 +189,42 @@
            rotation="-90 0 0" 
            light="angle: 50; penumbra: 0.31; distance: 50; color: #ff7b00; decay: -11.09; castShadow: true">
      </a-light>
+     <a-light type="spot" 
+              intensity="1" 
+              distance="20" 
+              position="11.547 -1.810 2.216"
+              color="#ff7b00">
+         </a-light>
+         <a-sphere
+        radius="0.3"
+        position="-1.036 -1.836 -11.543"
+        color="white"
+        emissive="#white"
+        material="roughness:0.2; metalness:0.7">     
+        </a-sphere> 
+         <a-light type="spot" 
+              intensity="1" 
+              distance="20" 
+              position="-0.885 -2.250 -10.308"
+              color="#ff7b00"
+              rotation="-270.000 0 0">
+         </a-light>
     
         
         <!-- second light 1-->
-        <a-sphere
-        radius="0.2"
-        color="white"
-        position="18.9 7.5 36.38"
-        emissive="#white"
-        material="roughness:0.2; metalness:0.7">     
-        </a-sphere>
-         <a-light type="spot" 
+        
+         <a-light type="point" 
                   intensity="1" 
-                  angle="35" 
-                  penumbra="0.2" 
                   distance="20" 
-                  position="18.9 7.4 36.642" 
-                  rotation="-90 0 0" 
-                  light="angle: 50; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+                  position="19.057 5.151 38.932" 
+                  rotation="-90 0 0" >
          </a-light>
          <!-- second light 2 -->
-        <a-sphere
-        radius="0.2"
-        color="white"
-        position="-11.7 5.5 36.38"
-        emissive="#white"
-        material="roughness:0.2; metalness:0.7">     
-        </a-sphere>
-         <a-light type="spot" 
+        
+         <a-light type="point" 
                   intensity="1" 
-                  angle="35" 
-                  penumbra="0.2" 
                   distance="20" 
-                  position="-11 7.4 36.642" 
-                  rotation="-90 0 0" 
-                  light="angle: 50; penumbra: 0.31; distance: 50; color: #FFF; decay: -11.09; castShadow: true">
+                  position="-12.255 6.102 36.799">
          </a-light>
         
         <!-- wall -->
