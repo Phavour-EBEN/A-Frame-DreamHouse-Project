@@ -17,6 +17,7 @@
             <img id="wall" src="/Assets/Imgs/wall copy.jpg" alt="">
             <img id="floor" src="Assets/Imgs/TexturesCom_BrickRound0046_1_seamless_S copy.jpg" alt="">
             <a-assets-item id="DreamHouse" src="Assets/scene.gltf"></a-assets-item>
+            <a-assets-item id="bed" src="Assets/bed/scene.gltf"></a-assets-item>
             <a-assets-item id="tree" src="Assets/tree_animate copy/scene.gltf"></a-assets-item>
             <a-assets-item id="main_gate" src="Assets/the_mansion_gate copy/scene.gltf"></a-assets-item>
             <a-assets-item id="gate_light" src="Assets/street_light/scene.gltf"></a-assets-item>
@@ -71,6 +72,14 @@
             <a-entity gltf-model="#DreamHouse" 
                       position="0 -4.7 0">
             </a-entity>
+        </a-entity>
+        <!-- bed model -->
+        <a-entity gltf-model="#bed"
+                  position="6.066 -3.614 -4.477"
+                  rotation="0 -90 0"
+                  scale="0.0009 0.0009 0.001"
+                  >
+
         </a-entity>
         <!-- tree model -->
         <a-entity gltf-model="#tree" 
@@ -195,21 +204,6 @@
               position="11.547 -1.810 2.216"
               color="#ff7b00">
          </a-light>
-         <a-sphere
-        radius="0.3"
-        position="-1.036 -1.836 -11.543"
-        color="white"
-        emissive="#white"
-        material="roughness:0.2; metalness:0.7">     
-        </a-sphere> 
-         <a-light type="spot" 
-              intensity="1" 
-              distance="20" 
-              position="-0.885 -2.250 -10.308"
-              color="#ff7b00"
-              rotation="-270.000 0 0">
-         </a-light>
-    
         
         <!-- second light 1-->
         
